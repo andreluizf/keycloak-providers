@@ -1,28 +1,22 @@
-package com.matera.keycloak.api;
+package com.keycloak.api;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Strings;
-import jakarta.validation.constraints.AssertFalse;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import lombok.extern.slf4j.Slf4j;
-import lombok.var;
-import org.apache.http.util.Asserts;
 import org.keycloak.connections.jpa.JpaConnectionProvider;
 import org.keycloak.http.HttpRequest;
 import org.keycloak.models.KeycloakContext;
 import org.keycloak.models.KeycloakSession;
-import org.keycloak.models.UserModel;
 import org.keycloak.services.cors.Cors;
 import org.keycloak.services.managers.AppAuthManager;
 import org.keycloak.services.managers.AuthenticationManager;
 
 import java.util.Base64;
-
-import static org.keycloak.utils.StringUtil.isNullOrEmpty;
 
 @Slf4j
 public class UserRestRessource {

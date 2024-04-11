@@ -1,5 +1,5 @@
 
-package com.matera.keycloak.auth;
+package com.keycloak.auth;
 
 import jakarta.ws.rs.core.NewCookie;
 import lombok.extern.slf4j.Slf4j;

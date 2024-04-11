@@ -1,4 +1,4 @@
-package com.matera.keycloak.auth;
+package com.keycloak.auth;
 
 import static org.keycloak.provider.ProviderConfigProperty.STRING_TYPE;
 
@@ -9,12 +9,11 @@ import com.google.auto.service.AutoService;
 import org.keycloak.Config;
 import org.keycloak.authentication.Authenticator;
 import org.keycloak.authentication.AuthenticatorFactory;
-import org.keycloak.events.EventListenerProviderFactory;
 import org.keycloak.models.AuthenticationExecutionModel;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.provider.ProviderConfigProperty;
-//@AutoService({AuthenticatorFactory.class })
+@AutoService({AuthenticatorFactory.class })
 public class IPAuthenticatorFactory implements AuthenticatorFactory {
 
     public static final String ID = "ipauthenticator";

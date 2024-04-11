@@ -1,13 +1,12 @@
-package com.matera.keycloak.auth;
+package com.keycloak.auth;
 
 import com.google.auto.service.AutoService;
 import org.keycloak.Config;
-import org.keycloak.authentication.AuthenticatorFactory;
 import org.keycloak.events.EventListenerProvider;
 import org.keycloak.events.EventListenerProviderFactory;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
-//@AutoService({EventListenerProviderFactory.class })
+@AutoService({EventListenerProviderFactory.class })
 public class KeycloakEventListenerProviderFactory implements EventListenerProviderFactory {
 
 	@Override

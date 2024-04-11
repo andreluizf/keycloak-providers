@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.matera.keycloak.auth;
+package com.keycloak.auth;
 
 import com.google.auto.service.AutoService;
 import org.keycloak.Config;
@@ -26,12 +26,11 @@ import org.keycloak.models.AuthenticationExecutionModel;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.provider.ProviderConfigProperty;
-import org.keycloak.services.resource.RealmResourceProviderFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-//@AutoService({AuthenticatorFactory.class })
+@AutoService({AuthenticatorFactory.class })
 public class UserAgentCookieAuthenticatorFactory implements AuthenticatorFactory, ConfigurableAuthenticatorFactory {
     public static final String PROVIDER_ID = "user-agent-cookie-authenticator";
     private static final String USER_AGENT_TEXT = "User Agent Cookie";

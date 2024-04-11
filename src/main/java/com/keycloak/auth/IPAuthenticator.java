@@ -1,4 +1,4 @@
-package com.matera.keycloak.auth;
+package com.keycloak.auth;
 
 import java.util.Collections;
 import java.util.Map;
@@ -6,9 +6,7 @@ import java.util.Map;
 import org.jboss.logging.Logger;
 import org.keycloak.authentication.AuthenticationFlowContext;
 import org.keycloak.authentication.Authenticator;
-import org.keycloak.credential.UserCredentialManager;
 import org.keycloak.models.*;
-import org.keycloak.models.credential.OTPCredentialModel;
 
 public class IPAuthenticator implements Authenticator {
 

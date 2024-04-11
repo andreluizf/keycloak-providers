@@ -1,9 +1,7 @@
-package com.matera.keycloak.api;
+package com.keycloak.api;
 
 import com.google.auto.service.AutoService;
 import org.keycloak.Config.Scope;
-import org.keycloak.events.EventListenerProvider;
-import org.keycloak.events.EventListenerProviderFactory;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.services.resource.RealmResourceProvider;

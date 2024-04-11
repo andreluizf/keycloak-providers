@@ -1,4 +1,4 @@
-package com.matera.keycloak.api;
+package com.keycloak.api;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

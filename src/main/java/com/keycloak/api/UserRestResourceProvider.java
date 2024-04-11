@@ -1,15 +1,9 @@
-package com.matera.keycloak.api;
+package com.keycloak.api;
 
 import lombok.extern.slf4j.Slf4j;
-import lombok.var;
-import org.keycloak.events.Event;
-import org.keycloak.events.EventListenerProvider;
-import org.keycloak.events.EventType;
-import org.keycloak.events.admin.AdminEvent;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.services.resource.RealmResourceProvider;
 
-import java.util.List;
 @Slf4j
 public class UserRestResourceProvider implements RealmResourceProvider {
 
